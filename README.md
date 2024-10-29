@@ -1,5 +1,7 @@
 # FILMYNASHA 🎬
 
+![FILMYNASHA Banner](https://github.com/DiyaChakraborty/DiyaChakraborty-Movie-Searching-Website/blob/d7055101715da8b0f52e5aef2bc7919ddba4e587/Screenshot%202024-10-30%20034704.png)
+
 ## Project Overview
 FILMYNASHA is your go-to website for a quick, easy, and fun movie search experience. With this web app, you can find information on all kinds of movies, filter them by year, and even watch some popular titles for free! We’re using the **OMDb API** to bring you a broad selection of movies, complete with details like plot summaries, release years, IMDb ratings, and more.
 
