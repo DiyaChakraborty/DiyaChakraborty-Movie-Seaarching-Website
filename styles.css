@@ -1,0 +1,249 @@
+/* Basic Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #f7f5f5;
+    background-color: #15151a;
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.9s;
+}
+
+header {
+     width: 100%;
+            height: 300px;
+            background-image: url(photo.jpg);
+            background-position: center;
+            background-repeat: no-repeat, ;
+            background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 2.5em;
+    color: rgb(119, 239, 239);
+    background-color: rgba(19, 18, 20, 0);
+    font-family: cursive;
+    letter-spacing: px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color;
+    /* Add a black outline to the text */
+    text-shadow: 
+        -3px -3px 0 #000, 
+         3px -3px 0 #000, 
+        -3px  3px 0 #000, 
+         3px  3px 0 #000;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Watch Movies Button Styling */
+#watch-movies-button {
+    background: linear-gradient(45deg, #ff004c, #ffcc00);
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+    box-shadow: 0 4px 8px rgba(255, 0, 76, 0.4);
+    animation: pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+}
+
+#watch-movies-button:hover {
+    background: linear-gradient(45deg, #ffcc00, #ff004c);
+    transform: scale(1.1);
+}
+
+.search-container {
+    margin: 20px ;
+}
+
+input[type="text"], input[type="number"] {
+    padding: 10px;
+    width: 250px;
+    border: 1px solid #282727;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d91e34;
+    color: rgb(239, 239, 232);
+    font-size:large;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #d3cd26;
+    color: black;
+}
+
+.movies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+    transition: transform 0.5s;
+    padding: 20px;
+}
+
+/* Container for each movie card */
+.movie {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 250px; /* Increase width for larger containers */
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(145, 144, 144, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s;
+}
+
+.movie:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.movie img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.movie-info {
+    padding: 10px;
+    text-align: center;
+    color: black;
+}
+
+.movie-title {
+    font-size: 1.3em;
+    margin: 0 0 10px;
+    font-weight: bold;
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.5s;
+}
+
+.modal-content {
+    background-color: #151518f6;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.999);
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: rgb(246, 240, 240);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(236, 239, 243, 0.94);
+    color: rgb(14, 13, 13);
+}
+
+/* --- Styles for the Watch Movies Page --- */
+.movie-list-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* Optional: To give container a light background */
+    border-radius: 10px;
+}
+
+.movie-box {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    width: 220px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.movie-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.movie-box img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.movie-title {
+    font-size: 1.2em;
+    color: #333;
+    margin: 15px 0;
+}
+
+.watch-button {
+    background-color: #d91e34;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.watch-button:hover {
+    background-color: #d3cd26;
+    color: #000;
+}
